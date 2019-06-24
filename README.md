@@ -2,6 +2,9 @@
 
 Supporting scripts and plotting tools for the MyShake simulation paper  
 
+## Generating movies  
+
+Step 1: In the MyShake_Simulation package, edit the file 'simulate_multiple_events.py'. This contains a function called movies(), which can be edited to run one or more simulations and generate movies. The config directory can be used to set parameters such as the number of updates, the sample proportion etc. There is also a function called 'real_data_test()', which is used to generate movies from real triggers in the same way. Note that the file locations of the trigger data must be specified here.
 
 ## Generating maps and summary figures for regional simulations  
 
@@ -18,7 +21,7 @@ Step 3: Go to the directory specified by 'error_dir'. You will need to make sepa
 Step 4: Run 'Mapping_driver.sh' with the name of the region that you want to produce figures for. Alternatively, run Make_all_plots.py to make all the figures in one go. This worflow is a bit strange because it was adapted directly from bash scripts desinged to plot GMT maps of
 each region. This should produce 4 new .pdf files in each region directory, for example:
 
-Chile_map_alert_time.pdf  Chile_map_distance_error.pdf  Chile_map_mag_error.pdf and summary_results_Chile.pdf    
+Chile_map_alert_time.pdf, Chile_map_distance_error.pdf, Chile_map_mag_error.pdf and summary_results_Chile.pdf    
 
 
 ## Generating summary figures for single event simulations   
