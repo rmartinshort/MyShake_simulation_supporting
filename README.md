@@ -55,4 +55,7 @@ The script Real_trigger_plotting_and_PGA_explore.ipynb can be used to remake Fig
 
 The script plot_mgrs_triggers.ipynb can be used to remake Figure 4. It makes use of the code in MGRS_corners.py, which attempts to generate shapely polygons from MGRS grid cells and plot them on a map. This has not been fully tested and may give strange results!  
 
+### Training and testing random forest regressors for magnitude estimation  
+
+This process is described in 'Magnitude_estimation_from_ground_motion.ipynb', which can also be used to remake Figure 5 from the paper.   
 
