@@ -34,5 +34,22 @@ population densities.
 Step 3: Once the simulations are complete, go to the 'error_dir' you specified. Use the script 'generate_file_structure.py' to create a directory structure needed for production of the figures. You specify the name of a folder, then it creates 
 subfolders for each region and puts the error .csv files into those folders.   
 
-Step 4: Run 'generate_error_figs.py' and provide the path to the folder you've just made with 'generate_file_structure.py'. The script will loop though the subfolders and make error plots for each region. 
+Step 4: Run 'generate_error_figs.py' and provide the path to the folder you've just made with 'generate_file_structure.py'. The script will loop though the subfolders and make error plots for each region.
+
+## Cartopy mapping of the region boxes  
+
+This is explained in global_region_map.ipynb  
+
+## Cartopy mapping of an individual region, showing earthquake locations and MyShake users 
+
+An example of the code used to create one of these figures is shown in event_map_plots.ipynb. The same code is actually used (in Event_mapper.py) during the production of maps for each region. This notebook is just for better clarity. Also see https://github.com/rmartinshort/mini_projects/tree/master/cartopy_mapping for some more cartopy examples.   
+
+## Plotting trigger infomation  
+
+The script Real_trigger_plotting_and_PGA_explore.ipynb can be used to remake Figure 3 from the paper and explore the amplitudes of real triggers. All the required files should be in the data directory.  
+
+## Mapping MGRS grid cells and triggers 
+
+The script plot_mgrs_triggers.ipynb can be used to remake Figure 4. It makes use of the code in MGRS_corners.py, which attempts to generate shapely polygons from MGRS grid cells and plot them on a map. This has not been fully tested and may give strange results!  
+
 
